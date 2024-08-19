@@ -1,0 +1,601 @@
+#logo img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+#logo-escura img {
+    width: 85px;
+    height: 70px;
+    margin-left: 9px;
+    margin-bottom: 5px;
+}
+
+.logo-escura-nav {
+    display: none;
+}
+
+body.dark-mode .logo-clara-nav {
+    display: none;
+
+}
+
+body.dark-mode .logo-escura-nav {
+    display: block;
+    background: transparent; 
+}
+
+.nav-item {
+    margin: 20px;
+    margin-top: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.current-page{
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, height 0.3s ease;
+    z-index: 1;
+}
+
+.navbar .nav-link:hover::after {
+    transform: scaleX(1);
+    height: 2px; 
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .nav-item:not(.dropdown) .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, height 0.3s ease;
+    z-index: 1;
+}
+
+.navbar .nav-item:not(.dropdown) .nav-link:hover::after {
+    transform: scaleX(1);
+    height: 2px; 
+}
+
+.navbar .nav-item.dropdown:hover .nav-link::after {
+    transform: scaleX(1);
+    height: 2px; 
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(51, 49, 49, 0.192); 
+}
+
+#logo {
+    margin-right: 20px; 
+    margin-left: 20px; 
+}
+
+.navbar-nav {
+    margin-left: auto;  
+}
+
+.navbar-nav.ml-auto {
+    margin-right: 20px;
+}
+
+.navbar-nav.ml-auto .nav-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.navbar {
+    height: 60px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.navbar-collapse {
+    margin-top: 10px; 
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#video-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+video {
+    width: 100%; 
+    height: auto; 
+}
+.icones-nike {
+    color: black;
+    text-align: start;
+    margin: 35px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.icones-nike-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto; 
+    margin-bottom: 35px;
+}
+
+.icones-nike-img a {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones-nike-img img {
+    width: 95%;
+    max-width: 95%;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icones-nike-img img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.nike-app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.nike-app img {
+    max-width: 100%;
+    height: auto;
+}
+
+.txt-nike{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    display: flex;
+    font-size: 50px;
+    font-weight: 300;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nike-app-button {
+    display: flex;
+    justify-content: center;
+}
+
+.nike-app-button button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nike-app-button button:hover {
+    background-color: #727272; 
+}
+
+.melhores-ofertas{
+    color: black;
+    text-align: start;
+    margin: 35px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+.container-all {
+    position: relative;
+}
+
+.container-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.prev-button,
+.next-button {
+    background: transparent;
+    border: none;
+    font-size: 85px;
+    color: black;
+    cursor: pointer;
+}
+
+.prev-button {
+    margin-right: auto; 
+}
+
+.next-button {
+    margin-left: auto; 
+}
+
+.container-cards-carousel {
+    position: relative; 
+    overflow: hidden; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.container-cards {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: max-content; 
+}
+  
+.card {
+    margin: 1px;
+    display: flex;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 0 0 auto; 
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .descricao {
+    margin-top: 10px;
+  }
+  .precos{
+    display: flex;
+  }
+
+  .preco-original {
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #727272;
+  }
+
+  .preco-oferta {
+    font-weight: bold;
+  }
+
+  .desconto {
+    color: #4CAF50;
+  }
+  
+  .botao-comprar {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .botao-comprar:hover {
+    background-color: #727272;
+  }
+
+  .junte-se-a-nos-img{
+    height: auto;
+    width: 150px;  
+    display: block;
+    margin: 3px auto;
+    max-width: 100%;
+}
+
+.logo-escura {
+    display: none;
+    width: 180px;  
+}
+
+body.dark-mode .logo-clara {
+    display: none;
+}
+
+body.dark-mode .logo-escura {
+    display: block;
+    background: transparent; 
+}
+
+.junte-se-a-nos-txt{
+    margin-bottom: 0;
+    margin-top: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;    
+    font-size: 100px;
+    text-align: center;  
+    flex-direction: column;
+}
+
+.junte-se-a-nos p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.junte-se-a-nos-button button{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.junte-se-a-nos-button a {
+    text-decoration: none;
+}
+
+.junte-se-a-nos-button :hover{
+    background-color: #727272;
+}
+
+
+.footer {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.li-top {
+    margin-top: 31px;
+}
+
+.left-footer {
+    font-size: 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #aaa;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.social-icons ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+}
+
+.social-icons li {
+    margin-right: 15px; 
+}
+
+.social-icons li:last-child {
+    margin-right: 0; 
+}
+
+.social-icons .fa {
+    color: #fff; 
+}
+
+.social-icons .fa:hover {
+    color: #aaa; 
+}
+
+.separator {
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+.footer-bottom .footer-item {
+    margin: 10px 10px; 
+}
+
+.footer-bottom a {
+    color: #fff; 
+}
+
+.footer-bottom a:hover {
+    color: #aaa; 
+}
+
+.payment-icons img {
+    margin-top: 5px;
+    margin-right: 10px; 
+    max-width: 50px; 
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+.payment-icons img:last-child {
+    margin-right: 0;
+}
+
+.ending{
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+
+.theme-checkbox {
+    --toggle-size: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6em;
+    height: 3.125em;
+    margin-bottom: 6px;
+    margin-left: 35px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #cfcccc), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #cfcccc 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #cfcccc 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+  }
+  
+  .theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+  }
+  
+  .theme-checkbox:checked {
+    background-position: 100%;
+  }
+
+  *.dark-mode{
+    transition: background-color 0.5s ease;
+  }
+
+  body.dark-mode {
+    transition: background-color 0.5s ease;
+    background-color: #201a1a;
+    color: white;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: white;
+}
+
+body.dark-mode .container-fluid {
+    transition: background-color 0.5s ease;
+    background-color: #1d1818;
+}
+
+body.dark-mode .navbar .nav-item .nav-link:hover::after {
+    background-color: white;
+}
+
+body.dark-mode .txt-nike,
+body.dark-mode .icones-nike,
+body.dark-mode .melhores-ofertas,
+body.dark-mode .descricao,
+body.dark-mode .preco-oferta,
+body.dark-mode .container-arrows button{
+    color: white;
+}
+
+body.dark-mode .nike-app-button button,
+body.dark-mode .botao-comprar,
+body.dark-mode .junte-se-a-nos-button button{
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .nike-app-button button:hover,
+body.dark-mode .botao-comprar:hover,
+body.dark-mode .junte-se-a-nos-button button:hover {
+    background-color: rgb(170, 169, 169);
+}
+
+body.dark-mode .card{
+    background-color: rgb(36, 34, 34);
+}
+body {
+    font-size: 16px; 
+    margin-right: 20px; 
+  }
+
+  .accesibility {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .accesibility a {
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #fff; 
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent; 
+    color: #fff; 
+  }
